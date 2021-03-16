@@ -44,4 +44,15 @@ public class Student {
 	{
 		grades = xGPA;
 	}
+	
+	public void solveGPA()
+	{
+		grades = Points/Credits;
+	}
+	
+	@Override
+	public String toString()
+	{
+		return "Student ID no.: " + StudentID + " No. of Credits " + Credits + " Points of student:" + Points + "GPA: " + grades;
+	}
 }

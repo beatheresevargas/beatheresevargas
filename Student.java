@@ -1,18 +1,19 @@
 import java.util.Scanner;
 public class Student {
 	
-	private String StudentID;
-	private int Credits, Points;
+	private String IDNum;
+	private int Credits;
+	private int Points;
 	private double grades;
 	
 	public String getSID()
 	{
-		return StudentID;
+		return IDNum;
 	}
 	
 	public void setSID(String xID)
 	{
-		StudentID = xID;
+		IDNum = xID;
 	}
 		
 	public int getCreds()
@@ -53,6 +54,6 @@ public class Student {
 	@Override
 	public String toString()
 	{
-		return "Student ID no.: " + StudentID + " No. of Credits " + Credits + " Points of student:" + Points + "GPA: " + grades;
+		return "Student ID no.: " + IDNum + " No. of Credits " + Credits + " Points of student:" + Points + "GPA: " + grades;
 	}
 }
